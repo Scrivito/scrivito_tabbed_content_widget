@@ -6,14 +6,18 @@
       - active_class = index == 0 ? 'active' : nil
       %li{class: active_class}
         %a{href: "##{tab.id}", 'data-toggle' => 'tab'}
-          = tab.headline
+          = display_field(tab, :headline)
 
   .tab-content
     - widget.tabs.each_with_index do |tab, index|
       - active_class = index == 0 ? 'active' : nil
+      -# still toying around with this a bit: 
+      - if false
+        = cms_tag(:div, widget, tabs[index], class: "tab-pane fade in #{active_class}", id: tab.id)
+
       .tab-pane.fade.in{id: tab.id, class: active_class}
         = cms_tag(:div, tab, :content)
-    
+
     - if widget.tabs.blank?
       = cms_tag(:div, widget, :tabs)
 
