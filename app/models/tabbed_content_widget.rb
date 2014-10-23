@@ -1,0 +1,40 @@
+class TabbedContentWidget < Widget
+
+  DEFAULT_TABS = 2
+
+  def self.valid_widget_classes_for(field_name)
+    # unfortunately this does not work with the current sdk, the valid_widget_classes_for method is for Objs only:
+    %w[TabbedContentTabWidget]
+  end
+
+  def tabs_with_default
+    _tabs = tabs.clone
+    missing_tabs.times do
+      _tabs << PlaceholderTabWidgetElement.new
+    end
+    _tabs
+  end
+
+  private
+
+  def missing_tabs
+    DEFAULT_TABS - tabs.size
+  end
+
+  class PlaceholderTabWidgetElement
+
+    def id
+      @id ||= SecureRandom.hex(2)
+    end
+
+    def headline
+      'Widget Placeholder'
+    end
+
+    def content
+      []
+    end
+
+  end
+
+end

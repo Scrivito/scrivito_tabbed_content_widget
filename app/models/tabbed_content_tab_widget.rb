@@ -1,0 +1,2 @@
+class TabbedContentTabWidget < Widget
+end

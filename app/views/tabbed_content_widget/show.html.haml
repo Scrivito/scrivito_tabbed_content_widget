@@ -1,0 +1,19 @@
+.tabs-wrapper
+  = cms_tag(:div, widget, :tabs, style: 'display:none')
+
+  %ul.nav.nav-tabs
+    - widget.tabs.each_with_index do |tab, index|
+      - active_class = index == 0 ? 'active' : nil
+      %li{class: active_class}
+        %a{href: "##{tab.id}", 'data-toggle' => 'tab'}
+          = tab.headline
+
+  .tab-content
+    - widget.tabs.each_with_index do |tab, index|
+      - active_class = index == 0 ? 'active' : nil
+      .tab-pane.fade.in{id: tab.id, class: active_class}
+        = cms_tag(:div, tab, :content)
+    
+    - if widget.tabs.blank?
+      = cms_tag(:div, widget, :tabs)
+
