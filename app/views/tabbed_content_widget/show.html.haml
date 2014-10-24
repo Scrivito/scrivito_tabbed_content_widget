@@ -1,23 +1,23 @@
 .tabs-wrapper
-  = cms_tag(:div, widget, :tabs, style: 'display:none')
+  = scrivito_tag(:div, widget, :tabs, style: 'display:none')
 
   %ul.nav.nav-tabs
     - widget.tabs.each_with_index do |tab, index|
       - active_class = index == 0 ? 'active' : nil
       %li{class: active_class}
         %a{href: "##{tab.id}", 'data-toggle' => 'tab'}
-          = display_field(tab, :headline)
+          = scrivito_field(tab, :headline)
 
   .tab-content
     - widget.tabs.each_with_index do |tab, index|
       - active_class = index == 0 ? 'active' : nil
       -# still toying around with this a bit: 
       - if false
-        = cms_tag(:div, widget, tabs[index], class: "tab-pane fade in #{active_class}", id: tab.id)
+        = scrivito_tag(:div, widget, tabs[index], class: "tab-pane fade in #{active_class}", id: tab.id)
 
       .tab-pane.fade.in{id: tab.id, class: active_class}
-        = cms_tag(:div, tab, :content)
+        = scrivito_tag(:div, tab, :content)
 
     - if widget.tabs.blank?
-      = cms_tag(:div, widget, :tabs)
+      = scrivito_tag(:div, widget, :tabs)
 
