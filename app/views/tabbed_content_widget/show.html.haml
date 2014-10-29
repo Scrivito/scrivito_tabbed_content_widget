@@ -5,8 +5,12 @@
     - widget.tabs.each_with_index do |tab, index|
       - active_class = index == 0 ? 'active' : nil
       %li{class: active_class}
-        %a{href: "##{tab.id}", 'data-toggle' => 'tab'}
-          = scrivito_field(tab, :headline)
+        = scrivito_tag(:a, tab, :headline, href: "##{tab.id}", 'data-toggle' => 'tab')
+
+    - if scrivito_in_editable_view?
+      %li.new_tab
+        %a{href: "#", style: "background-color: #439439; color: white;"}
+          New Tab
 
   .tab-content
     - widget.tabs.each_with_index do |tab, index|

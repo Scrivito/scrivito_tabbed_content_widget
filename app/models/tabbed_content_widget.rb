@@ -7,6 +7,10 @@ class TabbedContentWidget < Widget
     %w[TabbedContentTabWidget]
   end
 
+  def description_for_editor
+    "Tabbed Content"
+  end
+
   def tabs_with_default
     _tabs = tabs.clone
     missing_tabs.times do
