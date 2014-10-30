@@ -19,7 +19,7 @@ Run bundle:
 
     $ bundle
 
-(Currently you need to download the gem's files from github and install it locally.)
+(Currently you need to download the Gem's files from github and install it locally.)
 
 Run
 
