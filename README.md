@@ -13,7 +13,7 @@ Use Haml in your Rails App.
 
 Add the gem to your Gemfile:
 
-    gem 'scrivito_tabbed_content'
+    gem 'scrivito_tabbed_content_widget'
 
 Run bundle:
 
@@ -36,5 +36,4 @@ Switch to your Workspace 'rtc' and follow below Steps for Usage. If you are happ
 - Insert the Widget 'Tabbed Content' somewhere in your content.
 - Put some 'Tabbed Content Tab' widgets into it.
 - For each of the Tabbed Content Tabs: set a headline and fill the content with any widget (text, images, whatever).
-
 

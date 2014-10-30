@@ -1,2 +1,2 @@
-ScrivitoTabbedContent::Engine.routes.draw do
+ScrivitoTabbedContentWidget::Engine.routes.draw do
 end
