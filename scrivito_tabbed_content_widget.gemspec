@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
   s.homepage    = "https://www.scrivito.com"
   s.summary     = "A Scrivito Widget for tabbed content."
   s.description = "This Widget gives you tabbed content boxes that can be filled with widgets."
-  s.license     = "MIT"
+  s.license     = "LGPL-3.0"
 
-  s.files = Dir["{app,config,lib,scrivito}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "scrivito"
   s.add_dependency "haml"
