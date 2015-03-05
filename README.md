@@ -19,8 +19,6 @@ Run bundle:
 
     $ bundle
 
-(Currently you need to download the Gem's files from github and install it locally.)
-
 Add this line to your application's editing.js
 
    //= require scrivito_tabbed_content_widget/editing 

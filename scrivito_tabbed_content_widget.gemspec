@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "This Widget gives you tabbed content boxes that can be filled with widgets."
   s.license     = "LGPL-3.0"
 
-  s.files = Dir["{app,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "scrivito"
   s.add_dependency "haml"
