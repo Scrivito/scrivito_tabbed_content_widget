@@ -1,4 +1,5 @@
 class TabbedContentWidget < Widget
+  attribute :tabs, :widgetlist
 
   DEFAULT_TABS = 2
 
