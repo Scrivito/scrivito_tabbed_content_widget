@@ -1,44 +1,14 @@
 class TabbedContentWidget < Widget
-  attribute :tabs, :widgetlist
+  attribute :tabs, :widgetlist, default: [
+    TabbedContentTabWidget.new(title: 'First Tab'),
+    TabbedContentTabWidget.new(title: 'Second Tab')
+  ]
 
-  DEFAULT_TABS = 2
-
-  def self.valid_widget_classes_for(field_name)
-    %w[TabbedContentTabWidget]
+  def valid_widget_classes_for(field_name)
+    [TabbedContentTabWidget]
   end
 
-  def description_for_editor
-    "Tabbed Content"
+  def self.description_for_editor
+    'Tab Group'
   end
-
-  def tabs_with_default
-    _tabs = tabs.clone
-    missing_tabs.times do
-      _tabs << PlaceholderTabWidgetElement.new
-    end
-    _tabs
-  end
-
-  private
-
-  def missing_tabs
-    DEFAULT_TABS - tabs.size
-  end
-
-  class PlaceholderTabWidgetElement
-
-    def id
-      @id ||= SecureRandom.hex(2)
-    end
-
-    def headline
-      'Widget Placeholder'
-    end
-
-    def content
-      []
-    end
-
-  end
-
 end

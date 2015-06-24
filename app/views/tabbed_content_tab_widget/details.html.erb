@@ -1,0 +1,10 @@
+<div class="scrivito-tab-title-details">
+  <%= scrivito_tag :h4, widget, :title %>
+  <%= link_to '(details)', '#', 'data-scrivito-tab-toggle-details' => widget.id %>
+  <div class="scrivito-tab-details-<%= widget.id %>">
+    <div>
+      <b>Background Color</b>
+      <%= render 'scrivito_advanced_editors/color_picker', widget: widget, attribute: :background_color %>
+    </div>
+  </div>
+</div>
