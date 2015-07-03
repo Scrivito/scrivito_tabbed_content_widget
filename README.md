@@ -10,11 +10,11 @@ Add the gem to your Gemfile:
 
 Add this line to your applications stylesheet manifest
 
-   *= require scrivito_tabbed_content_widget
+    *= require scrivito_tabbed_content_widget
 
 Add this line to your applications javascript manifest
 
-   //= require scrivito_tabbed_content_widget
+    //= require scrivito_tabbed_content_widget
 
 ## License
 
