@@ -1,27 +1,39 @@
-.scrivito-tab-group .scrivito-tab-titles {
-  overflow: hidden;
+.scrivito-tab-group .scrivito-tab-titles:before,
+.scrivito-tab-group .scrivito-tab-titles:after {
+  content: " ";
+  display: table;
+}
+.scrivito-tab-group .scrivito-tab-titles:after {
+  clear: both;
 }
 
 .scrivito-tab-group .scrivito-tab-titles .scrivito-tab-title {
   float: left;
-  padding: 10px 50px;
-  background: #eee;
+  padding: 10px 20px;
+  background: transparent;
   cursor: pointer;
+  margin-right: 2px;
 }
 
 .scrivito-tab-group .scrivito-tab-titles .scrivito-tab-title:hover {
-  background: #ccc;
+  background: whitesmoke;
 }
 
 .scrivito-tab-group .scrivito-tab-titles .scrivito-tab-title.scrivito-tab-active {
-  background: #ddd;
+  background: #fff;
+  box-shadow: -2px -2px 5px -2px rgba(0,0,0,0.1),2px -2px 5px -2px rgba(0,0,0,0.1);
+}
+
+.scrivito-tab-group .scrivito-tab-contents {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  min-height: 100px!important;
+  padding: 20px;
+  width: 100%;
 }
 
 .scrivito-tab-group .scrivito-tab-contents .scrivito-tab-content {
   display: none;
-  min-height: 100px!important;
-  padding: 10px;
-  width: 100%;
 }
 
 .scrivito-tab-group .scrivito-tab-contents .scrivito-tab-content.scrivito-tab-active {
