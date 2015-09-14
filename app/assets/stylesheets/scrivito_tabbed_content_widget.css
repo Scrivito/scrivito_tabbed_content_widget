@@ -28,12 +28,12 @@
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   min-height: 100px!important;
-  padding: 20px;
   width: 100%;
 }
 
 .scrivito-tab-group .scrivito-tab-contents .scrivito-tab-content {
   display: none;
+  padding: 20px;
 }
 
 .scrivito-tab-group .scrivito-tab-contents .scrivito-tab-content.scrivito-tab-active {
