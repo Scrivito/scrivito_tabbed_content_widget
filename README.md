@@ -8,14 +8,6 @@ Add the gem to your Gemfile:
 
     gem 'scrivito_tabbed_content_widget'
 
-Add this line to your applications stylesheet manifest
-
-    *= require scrivito_tabbed_content_widget
-
-Add this line to your applications javascript manifest
-
-    //= require scrivito_tabbed_content_widget
-
 ## License
 
 Copyright (c) 2009 - 2015 Infopark AG (http://www.infopark.com)
