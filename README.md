@@ -2,14 +2,24 @@
 
 This Gem adds Tabbed Contents to your app. Fill the Gem with Tabs and fill each tab with a widget.
 
+## Prerequists
+
+This widget requires bootstrap.
+
 ## Installation
 
 Add the gem to your Gemfile:
 
     gem 'scrivito_tabbed_content_widget'
 
-## License
+## Customization
 
-Copyright (c) 2009 - 2015 Infopark AG (http://www.infopark.com)
+This widget includes an attribute for a background color of a panel. The value of this attribute is used as CSS class. If ypu want to use the feature add a CSS rule for your selectable colors:
 
-This software can be used and modified under the LGPL-3.0. Please refer to http://www.gnu.org/licenses/lgpl-3.0.html for the license text.
+```css
+.bg-red {
+  background-color: red;
+}
+```
+
+You can also use [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors #color_picker) color picker to have a better visualation of selectable color classes.

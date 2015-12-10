@@ -3,8 +3,8 @@
   <%= link_to '(details)', '#', 'data-scrivito-toggle-details' => widget.id %>
   <div class="scrivito-details-<%= widget.id %>">
     <div>
-      <h5>Background Color</h5>
-      <%= render 'scrivito_advanced_editors/color_picker', widget: widget, attribute: :background_color %>
+      <b>Background Color</b>
+      <%= scrivito_tag :div, widget, :background_color, data: {colors_list: scrivito_selectable_color_classes('accordion_widget', 'background_color')} %>
     </div>
   </div>
 </div>
