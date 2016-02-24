@@ -4,7 +4,7 @@
   <div class="scrivito-details-<%= widget.id %>">
     <div>
       <b>Background Color</b>
-      <%= scrivito_tag :div, widget, :background_color, data: {colors_list: scrivito_selectable_color_classes('accordion_widget', 'background_color')} %>
+      <%= scrivito_tag :div, widget, :background_color, data: {colors_list: widget.scrivito_selectable_color_classes} %>
     </div>
   </div>
 </div>

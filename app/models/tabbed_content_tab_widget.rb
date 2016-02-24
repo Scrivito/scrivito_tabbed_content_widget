@@ -18,4 +18,11 @@ class TabbedContentTabWidget < Widget
     css << self.background_color
     css.join(" ")
   end
+
+  def scrivito_selectable_color_classes
+    helper = ApplicationController.helpers
+    if helper.respond_to? 'scrivito_selectable_color_classes'
+      helper.scrivito_selectable_color_classes('accordion_widget', 'background_color')
+    end
+  end
 end
