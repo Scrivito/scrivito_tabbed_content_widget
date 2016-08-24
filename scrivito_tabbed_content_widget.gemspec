@@ -17,6 +17,4 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "scrivito"
-
-  s.add_development_dependency "rake"
 end
