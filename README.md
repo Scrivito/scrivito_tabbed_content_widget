@@ -22,7 +22,7 @@ This widget includes an attribute for the background color of every tab. The val
 }
 ```
 
-You can also use the [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors #color_picker) color picker to have a better visualization of the selectable color classes.
+You can also use the [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors#color_picker) color picker to have a better visualization of the selectable color classes.
 
 ## Localization
 
